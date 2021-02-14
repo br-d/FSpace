@@ -11,4 +11,8 @@
     <string name="drawerOpen">Drawer Open</string>
     <string name="drawerClose">Drawer close</string>
     <string name="registerButtonText">Create account</string>
+    <string name="emailTextViewHint">E-mail</string>
+    <string name="passwordTextViewHint">Password</string>
+    <string name="confirmPasswordTextViewHint">Confirm password</string>
+    <string name="logoDescriptor">Logo of F-Space</string>
 </resources>
