@@ -2,27 +2,43 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/navigationPost"
+        android:title="@string/addNewPost"
+        android:icon="@drawable/add_icon"/>
+
+    <item
+        android:id="@+id/navigationProfile"
+        android:title="@string/myProfile"
+        android:icon="@drawable/profile_icon"/>
+
+    <item
         android:id="@+id/navigationHome"
-        android:title="Home"/>
+        android:title="@string/homepage"
+        android:icon="@drawable/home_icon"/>
 
     <item
         android:id="@+id/navigationFriends"
-        android:title="Friends"/>
+        android:title="@string/friends"
+        android:icon="@drawable/friend_icon"/>
 
     <item
         android:id="@+id/navigationSearchFriends"
-        android:title="Search friends"/>
+        android:title="@string/searchFriend"
+        android:icon="@drawable/search_icon"/>
 
     <item
         android:id="@+id/navigationMessages"
-        android:title="Messages"/>
+        android:title="@string/messages"
+        android:icon="@drawable/message_icon"/>
 
     <item
         android:id="@+id/navigationSettings"
-        android:title="Settings"/>
+        android:title="@string/settings"
+        android:icon="@drawable/settings_icon"/>
 
     <item
         android:id="@+id/navigationLogout"
-        android:title="Logout"/>
+        android:title="@string/logout"
+        android:icon="@drawable/logout_icon"/>
 
 </menu>
