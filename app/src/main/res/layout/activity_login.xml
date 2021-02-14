@@ -5,26 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorAccent"
-    tools:context=".RegisterActivity">
-
+    tools:context=".LoginActivity">
 
     <ImageView
-        android:id="@+id/registerLogoImageView"
+        android:id="@+id/loginLogoImageView"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:contentDescription="@string/logoDescriptor"
         app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/registerEmailEditText"
+        android:id="@+id/loginEmailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="183dp"
+        android:layout_marginTop="180dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/inputs"
@@ -36,10 +35,10 @@
         android:padding="10dp" />
 
     <EditText
-        android:id="@+id/registerPasswordEditText"
+        android:id="@+id/loginPasswordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/registerEmailEditText"
+        android:layout_below="@id/loginEmailEditText"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="15dp"
@@ -51,40 +50,63 @@
         android:inputType="textPassword"
         android:padding="10dp" />
 
-    <EditText
-        android:id="@+id/registerConfirmPasswordEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/registerPasswordEditText"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/inputs"
-        android:drawableStart="@drawable/password_icon"
-        android:ems="10"
-        android:hint="@string/confirmPasswordTextViewHint"
-        android:importantForAutofill="no"
-        android:inputType="textPassword"
-        android:padding="10dp" />
-
     <Button
-        android:id="@+id/registerConfirmationButton"
-        android:layout_width="wrap_content"
+        android:id="@+id/loginButton"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/registerConfirmPasswordEditText"
+        android:layout_below="@id/loginPasswordEditText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/buttons"
         android:fontFamily="monospace"
-        android:text="@string/registerButtonText"
+        android:text="@string/loginButtonText"
         android:textSize="20sp" />
 
     <TextView
+        android:id="@+id/loginLinkToRegistration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/registerConfirmationButton"
+        android:layout_below="@id/loginButton"
         android:fontFamily="monospace"
-        android:text="@string/linkToLoginText"
+        android:text="@string/linkToRegistrationText"
         android:textAlignment="center"
         android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/loginChooseExternalLoginOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginLinkToRegistration"
+        android:fontFamily="monospace"
+        android:text="@string/externalLoginOption"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginChooseExternalLoginOption"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/loginExternalFacebook"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/facebook_icon" />
+
+        <ImageView
+            android:id="@+id/loginExternalGoogle"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/google_icon" />
+    </LinearLayout>
+
 </RelativeLayout>

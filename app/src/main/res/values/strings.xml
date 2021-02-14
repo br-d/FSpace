@@ -15,4 +15,8 @@
     <string name="passwordTextViewHint">Password</string>
     <string name="confirmPasswordTextViewHint">Confirm password</string>
     <string name="logoDescriptor">Logo of F-Space</string>
+    <string name="loginButtonText">Login</string>
+    <string name="linkToRegistrationText">Don\'t have an account? Create new one</string>
+    <string name="linkToLoginText">Already have an account? Login to space</string>
+    <string name="externalLoginOption">Login using an external option</string>
 </resources>
