@@ -21,4 +21,8 @@
         android:id="@+id/navigationSettings"
         android:title="Settings"/>
 
+    <item
+        android:id="@+id/navigationLogout"
+        android:title="Logout"/>
+
 </menu>
