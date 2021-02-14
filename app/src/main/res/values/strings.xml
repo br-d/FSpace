@@ -10,4 +10,5 @@
     <string name="logout">Logout</string>
     <string name="drawerOpen">Drawer Open</string>
     <string name="drawerClose">Drawer close</string>
+    <string name="registerButtonText">Create account</string>
 </resources>
