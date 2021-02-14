@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigationHome"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/navigationFriends"
+        android:title="Friends"/>
+
+    <item
+        android:id="@+id/navigationSearchFriends"
+        android:title="Search friends"/>
+
+    <item
+        android:id="@+id/navigationMessages"
+        android:title="Messages"/>
+
+    <item
+        android:id="@+id/navigationSettings"
+        android:title="Settings"/>
+
+</menu>
