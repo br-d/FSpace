@@ -20,7 +20,7 @@
     <string name="linkToLoginText">Already have an account? Login to space</string>
     <string name="externalLoginOption">Login using an external option</string>
     <string name="setupUsernameMultilineText">Username</string>
-    <string name="setupFullnameMultilineText">Fullname</string>
+    <string name="setupFullnameMultilineText">Full Name</string>
     <string name="setupCountryMultilineText">Country</string>
     <string name="setupConfirmButtonTextValue">Confirm</string>
 </resources>
