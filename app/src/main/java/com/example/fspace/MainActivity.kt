@@ -62,7 +62,8 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.navigationLogout -> {
-                    Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show()
+                    firebaseAuth.signOut()
+                    sendToLoginActivity()
                     true
                 }
                 R.id.navigationMessages -> {
