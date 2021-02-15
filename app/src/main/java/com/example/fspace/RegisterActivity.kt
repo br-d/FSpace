@@ -43,9 +43,9 @@ class RegisterActivity : AppCompatActivity() {
         var confirmPassword = confirmPasswordEditText.text.toString()
 
         if(email.isBlank() or password.isEmpty() or confirmPassword.isEmpty())
-            Toast.makeText(this, "Please enter all needed information", Toast.LENGTH_SHORT)
+            Toast.makeText(this, "Please enter all needed information", Toast.LENGTH_SHORT).show()
         else if(password != confirmPassword)
-            Toast.makeText(this, "Passwords didn't match", Toast.LENGTH_SHORT)
+            Toast.makeText(this, "Passwords didn't match", Toast.LENGTH_SHORT).show()
         else{
             registerBar.setTitle("Creating an account")
             registerBar.setMessage("Please wait while we are creating your account")
@@ -55,14 +55,14 @@ class RegisterActivity : AppCompatActivity() {
             firebaseAuth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener{
                         if(it.isSuccessful) {
-                            Toast.makeText(this, "Your account has been created", Toast.LENGTH_SHORT)
+                            Toast.makeText(this, "Your account has been created", Toast.LENGTH_SHORT).show()
                             registerBar.dismiss()
                             sendToSetupActivity()
                         }
                         else {
                             registerBar.dismiss()
                             var message = it.exception?.message
-                            Toast.makeText(this, "Error occurred: $message", Toast.LENGTH_SHORT)
+                            Toast.makeText(this, "Error occurred: $message", Toast.LENGTH_SHORT).show()
                         }
                     }
         }
