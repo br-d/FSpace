@@ -31,7 +31,6 @@ class LoginActivity : AppCompatActivity() {
     private fun sendUserToRegisterActivity() {
         var registerIntent = Intent(this@LoginActivity, RegisterActivity::class.java)
         startActivity(registerIntent)
-        finish()
     }
 
 }
