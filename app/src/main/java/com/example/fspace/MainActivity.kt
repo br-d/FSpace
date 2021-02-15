@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         firebaseAuth = FirebaseAuth.getInstance()
-        userDbReference = FirebaseDatabase.getInstance().getReference("Users")
+        userDbReference = FirebaseDatabase.getInstance().getReference().child("Users")
 
         toolbar = findViewById(R.id.mainPageToolbar)
         setSupportActionBar(toolbar)
@@ -120,6 +120,7 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+        println(userDbReference.toString())
         userDbReference.addValueEventListener(getUserFromDb)
     }
 
